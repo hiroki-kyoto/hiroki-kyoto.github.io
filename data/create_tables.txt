@@ -1,0 +1,155 @@
+create table DYL_4G_DEV_NUM_SHANG
+(
+  month_id         VARCHAR2(6),
+  prov_id          VARCHAR2(10),
+  area_id          VARCHAR2(20),
+  subs_instance_id VARCHAR2(50),
+  dev_num_shang    NUMBER
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+
+-- Create table
+create table DYL_3G_DEV_NUM_SHANG
+(
+  month_id         VARCHAR2(6),
+  prov_id          VARCHAR2(10),
+  area_id          VARCHAR2(20),
+  subs_instance_id VARCHAR2(50),
+  dev_num_shang    NUMBER
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+
+-- Create table
+create table VIEW_IMEI_TAC_INFO
+(
+  tac        VARCHAR2(10),
+  model_id   VARCHAR2(255),
+  manu_id    VARCHAR2(255),
+  model_name VARCHAR2(512),
+  manu_name  VARCHAR2(512)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+
+
+-- Create table
+create table DWD_M_RES_MB_TERMINAL_IMEI
+(
+  month_id             VARCHAR2(6),
+  manu_id              VARCHAR2(100),
+  manu_name            VARCHAR2(100),
+  manu_alias           VARCHAR2(200),
+  model_id             VARCHAR2(100),
+  model_name           VARCHAR2(500),
+  tac                  VARCHAR2(8),
+  model_param_id       VARCHAR2(100),
+  model_param_name     VARCHAR2(255),
+  sw_version           VARCHAR2(255),
+  os_type              VARCHAR2(2),
+  is_smart             VARCHAR2(2),
+  os                   VARCHAR2(50),
+  version              VARCHAR2(50),
+  supportj2me          VARCHAR2(2),
+  ismobileemail        VARCHAR2(2),
+  mms                  VARCHAR2(2),
+  iswap                VARCHAR2(2),
+  isgprs               VARCHAR2(2),
+  isdm                 VARCHAR2(2),
+  isagps               VARCHAR2(2),
+  issupl               VARCHAR2(2),
+  isgps                VARCHAR2(2),
+  isdrm                VARCHAR2(2),
+  ishsdpa              VARCHAR2(2),
+  ishsupa              VARCHAR2(2),
+  mainscreenheight     VARCHAR2(64),
+  mainscreenwidth      VARCHAR2(64),
+  wapbrowserversion    VARCHAR2(64),
+  internetbrowser      VARCHAR2(64),
+  issupported          VARCHAR2(64),
+  filetypes            VARCHAR2(200),
+  digitalmusicplayer   VARCHAR2(200),
+  digitalmusicformat   VARCHAR2(200),
+  isstreamingtv        VARCHAR2(2),
+  is_3g                VARCHAR2(2),
+  item_value           VARCHAR2(1000),
+  latestretailprice    VARCHAR2(10),
+  screensize           VARCHAR2(10),
+  cputype              VARCHAR2(10),
+  launchdate           VARCHAR2(20),
+  iswifi               VARCHAR2(5),
+  net_type             VARCHAR2(2),
+  ishspa               VARCHAR2(10),
+  type_3g              VARCHAR2(10),
+  bandclass            VARCHAR2(4000),
+  is_nfc               VARCHAR2(100),
+  is_bluetooth         VARCHAR2(100),
+  band_frequency       VARCHAR2(4000),
+  network_type         VARCHAR2(50),
+  unicom_4g            VARCHAR2(2),
+  unicom_3g            VARCHAR2(2),
+  unicom_2g            VARCHAR2(2),
+  u_mize               VARCHAR2(2),
+  t_mize               VARCHAR2(2),
+  m_mize               VARCHAR2(2),
+  all_mize             VARCHAR2(2),
+  miit4g               VARCHAR2(2),
+  miit3g               VARCHAR2(2),
+  miit2g               VARCHAR2(2),
+  new_type             VARCHAR2(15),
+  create_time          DATE,
+  update_time          DATE,
+  is_dual              VARCHAR2(50),
+  is_pj                VARCHAR2(2),
+  is_up                VARCHAR2(2),
+  is_special           VARCHAR2(2),
+  tac_source           VARCHAR2(2),
+  is_smart_new         VARCHAR2(2),
+  is_edge              VARCHAR2(2),
+  sim_type             VARCHAR2(50),
+  max_video_resolution VARCHAR2(500),
+  main_camera_pixel    VARCHAR2(500),
+  aux_camera_pixel     VARCHAR2(500)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 519M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
