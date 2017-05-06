@@ -1,0 +1,134 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Sat Apr 15 10:48:00 2017
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   _2G_DWA_V_M_2G_VOICE_BEHAVIOR_079.CTL
+First primary datafile ODATA/2G/DWA_V_M_2G_VOICE_BEHAVIOR_079.csv has a
+ utf8 byte order mark in it.
+
+Data File:      ODATA/2G/DWA_V_M_2G_VOICE_BEHAVIOR_079.csv
+  Bad File:     bad.txt
+  Discard File: discard.txt 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 100000
+Bind array:     50000 rows, maximum of 8388608 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table T_2G_DWA_V_M_2G_VOICE_BEHAVIOR_079, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+MONTH_ID                            FIRST     *   ,  O(") CHARACTER            
+PROV_ID                              NEXT     *   ,  O(") CHARACTER            
+USER_ID                              NEXT     *   ,  O(") CHARACTER            
+SERVICE_TYPE                         NEXT     *   ,  O(") CHARACTER            
+STDEV_CDR_NUM                        NEXT     *   ,  O(") CHARACTER            
+VAR_CDR_NUM                          NEXT     *   ,  O(") CHARACTER            
+STDEV_CALLING_CDR_NUM                NEXT     *   ,  O(") CHARACTER            
+VAR_CALLING_CDR_NUM                  NEXT     *   ,  O(") CHARACTER            
+STDEV_CALL_DURATION                  NEXT     *   ,  O(") CHARACTER            
+VAR_CALL_DURATION                    NEXT     *   ,  O(") CHARACTER            
+STDEV_CALLING_DURATION               NEXT     *   ,  O(") CHARACTER            
+VAR_CALLING_DURATION                 NEXT     *   ,  O(") CHARACTER            
+STDEV_MOBILE_TIME                    NEXT     *   ,  O(") CHARACTER            
+VAR_MOBILE_TIME                      NEXT     *   ,  O(") CHARACTER            
+STDEV_CALLING_MOBILE_TIME            NEXT     *   ,  O(") CHARACTER            
+VAR_CALLING_MOBILE_TIME              NEXT     *   ,  O(") CHARACTER            
+CALL_DAYS                            NEXT     *   ,  O(") CHARACTER            
+CALLING_DAYS                         NEXT     *   ,  O(") CHARACTER            
+CALLED_DAYS                          NEXT     *   ,  O(") CHARACTER            
+LAST_CALL_TIME                       NEXT     *   ,  O(") CHARACTER            
+LAST_CALLING_TIME                    NEXT     *   ,  O(") CHARACTER            
+CALL_DURA_LAST7                      NEXT     *   ,  O(") CHARACTER            
+CALL_DURA_FIRST20                    NEXT     *   ,  O(") CHARACTER            
+CALL_DURA_FIRST7                     NEXT     *   ,  O(") CHARACTER            
+CALL_DURA_LAST20                     NEXT     *   ,  O(") CHARACTER            
+CALL_RING                            NEXT     *   ,  O(") CHARACTER            
+CALLING_RING                         NEXT     *   ,  O(") CHARACTER            
+CALLED_RING                          NEXT     *   ,  O(") CHARACTER            
+UNICOM_MOBILE_RING                   NEXT     *   ,  O(") CHARACTER            
+OTHER_MOBILE_RING                    NEXT     *   ,  O(") CHARACTER            
+UNICOM_FX_RING                       NEXT     *   ,  O(") CHARACTER            
+OTHER_FX_RING                        NEXT     *   ,  O(") CHARACTER            
+VALID_CALL_RING                      NEXT     *   ,  O(") CHARACTER            
+VALID_UNICOM_MOBILE_RING             NEXT     *   ,  O(") CHARACTER            
+VALID_OTHER_MOBILE_RING              NEXT     *   ,  O(") CHARACTER            
+VALID_UNICOM_FX_RING                 NEXT     *   ,  O(") CHARACTER            
+VALID_OTHER_FX_RING                  NEXT     *   ,  O(") CHARACTER            
+CELLID_NUM                           NEXT     *   ,  O(") CHARACTER            
+CALLING_CELLID_NUM                   NEXT     *   ,  O(") CHARACTER            
+CALLED_CELLID_NUM                    NEXT     *   ,  O(") CHARACTER            
+BUSY_CALL_RING                       NEXT     *   ,  O(") CHARACTER            
+BUSY_CELLID_NUM                      NEXT     *   ,  O(") CHARACTER            
+BUSY_CALL_DURA                       NEXT     *   ,  O(") CHARACTER            
+BUSY_CDR_NUM                         NEXT     *   ,  O(") CHARACTER            
+BUSY_MOBILE_TIME                     NEXT     *   ,  O(") CHARACTER            
+EASY_CALL_RING                       NEXT     *   ,  O(") CHARACTER            
+EASY_CELLID_NUM                      NEXT     *   ,  O(") CHARACTER            
+EASY_CALL_DURA                       NEXT     *   ,  O(") CHARACTER            
+EASY_CDR_NUM                         NEXT     *   ,  O(") CHARACTER            
+EASY_MOBILE_TIME                     NEXT     *   ,  O(") CHARACTER            
+BUSY_CALLING_RING                    NEXT     *   ,  O(") CHARACTER            
+BUSY_CALLING_CELLID_NUM              NEXT     *   ,  O(") CHARACTER            
+BUSY_CALLING_DURA                    NEXT     *   ,  O(") CHARACTER            
+BUSY_CALLING_CDR_NUM                 NEXT     *   ,  O(") CHARACTER            
+BUSY_CALLING_MOBILE_TIME             NEXT     *   ,  O(") CHARACTER            
+EASY_CALLING_RING                    NEXT     *   ,  O(") CHARACTER            
+EASY_CALLING_CELLID_NUM              NEXT     *   ,  O(") CHARACTER            
+EASY_CALLING_DURA                    NEXT     *   ,  O(") CHARACTER            
+EASY_CALLING_CDR_NUM                 NEXT     *   ,  O(") CHARACTER            
+EASY_CALLING_MOBILE_TIME             NEXT     *   ,  O(") CHARACTER            
+CALLING_MOBILE_PHONE_CDR             NEXT     *   ,  O(") CHARACTER            
+CALLING_TELE_PHONE_CDR               NEXT     *   ,  O(") CHARACTER            
+CALLING_UNICOM_PHONE_CDR             NEXT     *   ,  O(") CHARACTER            
+CALLING_FX_CDR                       NEXT     *   ,  O(") CHARACTER            
+CALLING_MOBILE_PHONE_DURA            NEXT     *   ,  O(") CHARACTER            
+CALLING_TELE_PHONE_DURA              NEXT     *   ,  O(") CHARACTER            
+CALLING_UNICOM_PHONE_DURA            NEXT     *   ,  O(") CHARACTER            
+CALLING_FX_DURA                      NEXT     *   ,  O(") CHARACTER            
+CALLED_MOBILE_PHONE_CDR              NEXT     *   ,  O(") CHARACTER            
+CALLED_TELE_PHONE_CDR                NEXT     *   ,  O(") CHARACTER            
+CALLED_UNICOM_PHONE_CDR              NEXT     *   ,  O(") CHARACTER            
+CALLED_FX_CDR                        NEXT     *   ,  O(") CHARACTER            
+CALLED_MOBILE_PHONE_DURA             NEXT     *   ,  O(") CHARACTER            
+CALLED_TELE_PHONE_DURA               NEXT     *   ,  O(") CHARACTER            
+CALLED_UNICOM_PHONE_DURA             NEXT     *   ,  O(") CHARACTER            
+CALLED_FX_DURA                       NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_MOBILE_CDR             NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_TELE_CDR               NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_UNICOM_CDR             NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_FX_CDR                 NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_MOBILE_DURA            NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_TELE_DURA              NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_UNICOM_DURA            NEXT     *   ,  O(") CHARACTER            
+LOCAL_CALLING_FX_DURA                NEXT     *   ,  O(") CHARACTER            
+
+value used for ROWS parameter changed from 50000 to 387
+
+Table T_2G_DWA_V_M_2G_VOICE_BEHAVIOR_079:
+  8248 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                8387064 bytes(387 rows)
+Read   buffer bytes: 8388608
+
+Total logical records skipped:          1
+Total logical records read:          8248
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sat Apr 15 10:48:00 2017
+Run ended on Sat Apr 15 10:48:01 2017
+
+Elapsed time was:     00:00:00.95
+CPU time was:         00:00:00.19

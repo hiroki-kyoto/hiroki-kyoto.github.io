@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+EXEC SQL INCLUDE SQLCA;
+
+int main()
+{
+     //声明SQL变量
+     EXEC SQL BEGIN DECLARE SECTION;
+     VARCHAR user[20],pass[20],tnsname[20];
+     //VARCHAR预编译后为struct { unsigned short len; unsigned char arr[20];}
+     char ename[20];
+     int empno;
+     EXEC SQL END DECLARE SECTION;
+     
+     //声明C变量
+     int i=0;
+     
+     //变量赋值
+     strcpy(user.arr,"umail");
+     user.len=(unsigned short)strlen((char *)user.arr);
+     strcpy(pass.arr,"umail");
+     pass.len=(unsigned short)strlen((char *)pass.arr);
+     strcpy(tnsname.arr,"umail");
+     tnsname.len=(unsigned short)strlen((char *)tnsname.arr);
+     
+     //连接数据库
+     EXEC SQL CONNECT :user IDENTIFIED BY :pass USING :tnsname;
+
+     EXEC SQL declare emp_cursor cursor for
+                                          select id,ename from umail.tt1;
+
+                                   
+     EXEC SQL open emp_cursor;
+
+     EXEC SQL WHENEVER NOT FOUND DO break;
+
+     while(1)
+     {
+           EXEC SQL fetch emp_cursor into :empno,:ename;
+           printf("the empno %d/'s name is %s/n",empno,ename);
+           i=i+1;
+     }
+     
+     printf("Yeah!We get %d records/n",i);
+
+     EXEC SQL close emp_cursor;
+     
+     EXEC SQL commit work release;
+}
