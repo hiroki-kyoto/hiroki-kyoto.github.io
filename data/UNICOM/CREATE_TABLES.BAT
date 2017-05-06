@@ -1,4 +1,0 @@
-SQLPLUS 2g/root ^@_2G.PRC
-SQLPLUS 3g/root ^@_3G.PRC
-SQLPLUS 4g/root ^@_4G.PRC
-PAUSE
